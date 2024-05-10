@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 const FinancialTransaction = () => {
   const [transactions,setTransactions]=useState([])
   useEffect(()=>{
-    fetch('http://5.42.94.18:3000/api/v1/wallet/2/wallet_transaction')
+    fetch('http://5.42.94.18:3000/api/v1/wallet/1/wallet_transaction')
     .then((response)=>response.json())
     .then((transactions)=>{
       setTransactions(transactions.data)
