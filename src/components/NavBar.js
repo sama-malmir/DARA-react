@@ -1,9 +1,9 @@
 import React from 'react'
 import Account from './Account'
-const NavBar = () => {
+const NavBar = ({name, balance}) => {
   return (
    <>
-   <Account />
+   <Account  name={name} balance ={balance}/>
    </>
   )
 }

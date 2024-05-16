@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./List.css";
-const NewTransaction = ({e}) => {
+const NewTransaction = ({getDataUser}) => {
   const [category, setCategory] = useState([]);
   const [inputText, setInputText] = useState("");
   const [inputNumber, setInputNumber] = useState("");
@@ -60,9 +60,10 @@ const NewTransaction = ({e}) => {
       .then(response => {
         if (response.status === 204) {
           setIsSuccess(true)
-          setCategory([])
+          setSelectedCategory(category[0].id);
           setInputNumber('')
           setInputText('')
+          getDataUser()
          } else {
           response.json()
           .then(response =>{

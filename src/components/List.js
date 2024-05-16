@@ -3,7 +3,7 @@ import FinancialTransaction from './FinancialTransaction'
 import NewTransaction from './NewTransaction'
 import { Link, Route,Routes } from 'react-router-dom'
 import './List.css'
-const List = () => {
+const List = ({getDataUser}) => {
    
   return (
     <>
@@ -14,8 +14,14 @@ const List = () => {
         </ul>
     </div>
     <Routes>
-    <Route path='/financial-transaction' element={<FinancialTransaction />} />
-    <Route path='/new-transaction' element={<NewTransaction />} />
+    <Route 
+    path='/financial-transaction' 
+    element={<FinancialTransaction 
+    getDataUser={getDataUser} />} />
+    <Route 
+    path='/new-transaction' 
+    element={<NewTransaction 
+    getDataUser={getDataUser} />} />
    </Routes>
     </>
   )
