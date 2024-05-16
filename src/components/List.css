@@ -7,3 +7,32 @@
     border-radius: 10px;
     
 }
+.bgWithdraw{
+    display: flex;
+    flex-direction: column;
+    margin-right: 192px;
+    margin-left: 40px;
+    margin-top: -112px;
+    margin-bottom: 128px;
+    border: solid 4px;
+    border-color:#1a5d5d ;
+    height: 208px;
+    border-radius: 12px;
+    background-color:#7ec0c0 ;
+}
+.bgDepoist{
+    display: flex;
+    flex-direction: column;
+    margin-right: 192px;
+    margin-left: 40px;
+    margin-top: -112px;
+    margin-bottom: 128px;
+    border: solid 4px;
+    border-color:#1a5d5d ;
+    height: 208px;
+    border-radius: 12px;
+    background-color: #e9956e;
+}
+
+
+
